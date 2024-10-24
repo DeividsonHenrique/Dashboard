@@ -431,3 +431,19 @@ body{
 .sidebar-nav .nav-content a:hover i, .sidebar-nav .nav-content a.active i{
   background: #4154f1;
 }
+
+
+
+
+
+
+
+
+
+/* main  */
+
+#main{
+  margin-top: 60px;
+  padding: 15px;
+  transition: all 0.3s;
+}

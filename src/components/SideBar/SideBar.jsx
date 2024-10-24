@@ -1,4 +1,5 @@
 import navList from "../../data/NavItem"
+import NavItem from "../NavGeneral/NavItem"
 
 function SideBar() {
   return (
@@ -39,6 +40,9 @@ function SideBar() {
             <span>Logistics</span>
           </a>
         </li>
+
+        
+
         </ul>
         </li>
 
@@ -156,6 +160,12 @@ function SideBar() {
           </li>
         </ul>
         </li>
+
+        <li className="nav-heading">Pages</li>
+        {navList.map((nav) => (
+          <NavItem key={nav._id} nav={nav} />
+        ))}
+
       </ul>
     </aside>
   )
