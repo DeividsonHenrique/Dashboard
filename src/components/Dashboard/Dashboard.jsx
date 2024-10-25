@@ -1,22 +1,14 @@
-import { useState, useEffect } from "react"
-import Card from "../Card/Card"
+import Cards from "../Card/Cards"
 import Reports from "../Reports/Reports"
 import RecentSales from "../RecentSales/RecentSales"
 import TopSelling from "../../Selling/TopSelling"
+import RecentActivity from "../Activity/RecentActivity"
+import BudgetReport from "../Budget/BudgetReport"
+import WebTraffic from "../Web/WebTraffic"
+import News from "../News/News"
 
 function Dashboard() {
-    const [cards, setCards] = useState([])
-
-    const fetchData = async () => {
-         await fetch('http://localhost:3000/cards')
-        .then(res => res.json())
-        .then(data => { setCards(data)})
-        .catch(err => console.log(err.message))
-    }
-
-    useEffect(() => {
-        fetchData()
-    }, [])
+    
 
   return (
     <section className="dashboard">
@@ -24,9 +16,7 @@ function Dashboard() {
       <div className="row">
         <div className="col-lg-8">
           <div className="row">
-            {cards  && cards.length > 0 && cards.map((card) => {
-                return (<Card key={card._id} card={card} />)})
-            }
+            <Cards />
             <div className="col-12">
                 <Reports />
             </div>
@@ -40,7 +30,10 @@ function Dashboard() {
           </div>
         </div>
         <div className="col-lg-4">
-
+            <RecentActivity />
+            <BudgetReport />
+            <WebTraffic />
+            <News />
         </div>
       </div>
     </section>

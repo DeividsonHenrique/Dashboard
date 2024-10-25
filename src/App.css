@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
   /* parte do header */
-
 
 .header-nav ul{
   list-style: none;
@@ -606,4 +604,146 @@
 
 .dashboard .recent-sales .dataTable-bottom{
   padding: 10px 0 0 0;
+}
+
+
+
+/* recent Activities */
+
+.dashboard .activity{
+  font-size: 14px;
+}
+
+.dashboard .activity .activity-item .activite-label{
+  color: #888;
+  position: relative;
+  flex-shrink: 0;
+  flex-grow: 0;
+  min-width: 64px;
+}
+
+
+.dashboard .activity .activity-item .activite-label::before{
+  content: "";
+  position: absolute;
+  right: -11px;
+  width: 4px;
+  top: 0;
+  bottom: 0;
+  background-color: #ede9fe;
+}
+
+
+.dashboard .activity .activity-item .activity-badge{
+  margin-top: 3px;
+  z-index: 1;
+  font-size: 11px;
+  line-height: 0;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 3px solid #fff;
+  flex-grow: 0;
+}
+
+
+.dashboard .activity .activity-item .activity-content{
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.dashboard .activity .activity-item:first-child .activite-label::before{
+  top: 5px;
+}
+
+.dashboard .activity .activity-item:last-child .activity-content{
+  padding-bottom: 0;
+}
+
+
+/* news */
+
+.dashboard .news .post-item + .post-item{
+  margin-top: 15px;
+}
+
+.dashboard .news img{
+  width: 80px;
+  float: left;
+  border-radius: 5px;
+}
+
+.dashboard .news h4{
+  font-size: 15px;
+  margin-left: 95px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dashboard .news h4 a{
+  color: #012970;
+  transition: 0.3s;
+}
+
+.dashboard .news h4 a:hover{
+  color: #4154f1;
+}
+
+.dashboard .news p{
+  font-size: 14px;
+  color: #777777;
+  margin-left: 95px;
+}
+
+/* footer */
+
+.footer{
+  padding: 20px 0;
+  font-size: 14px;
+  transition: all 0.3s;
+  border-top: 1px solid #cddfff;
+}
+
+.footer .copyright{
+  text-align: center;
+  color: #012970;
+}
+
+.footer .credits{
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #012970;
+}
+
+
+/* scroll button */
+
+.back-to-top{
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #4154f1;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i{
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover{
+  background: #6777ef;
+  color: #fff;
+}
+
+.back-to-top.active{
+  visibility: visible;
+  opacity: 1;
 }

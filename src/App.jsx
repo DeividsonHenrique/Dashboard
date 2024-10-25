@@ -11,16 +11,21 @@ import Header from './components/Header/Header'
 import SideBar from './components/SideBar/SideBar'
 import Main from './components/Main/Main'
 
-import { GlobalStyle } from './style.js'
+import { GlobalStyle, AjustComponent } from './style.js'
+import Footer from './components/Footer/Footer.jsx'
+import BackToTop from './components/BackToTop.jsx'
 
 function App() {
 
   return (
     <>
-    <GlobalStyle />
+      <GlobalStyle />
+      <AjustComponent />
       <Header />
       <SideBar />
       <Main />
+      <Footer />
+      <BackToTop />
     </>
   )
 }
