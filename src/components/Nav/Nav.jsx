@@ -2,7 +2,6 @@ import NavNotices from "../NavGeneral/NavNotices.jsx"
 import NavMessage from "../NavGeneral/NavMessage.jsx"
 import NavAvatar from "../NavGeneral/NavAvatar.jsx"
 import {NavContainer} from "./style.js"
-import '../../app.css'
 
 function Nav() {
   return (
