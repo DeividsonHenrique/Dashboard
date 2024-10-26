@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const NavContainer = styled.nav`
-
-    
-`
+export const Ul = styled.nav`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;

@@ -5,9 +5,9 @@ function Cards() {
     const [cards, setCards] = useState([])
 
     const fetchData = async () => {
-         await fetch('http://localhost:3000/cards')
+         await fetch('./api/info.json') //http://localhost:3000/cards
         .then(res => res.json())
-        .then(data => { setCards(data)})
+        .then(data => { setCards(data.cards)})
         .catch(err => console.log(err.message))
     }
 

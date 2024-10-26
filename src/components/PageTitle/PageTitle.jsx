@@ -1,9 +1,20 @@
 /* eslint-disable react/prop-types */
+import styled from "styled-components";
 
+const PageTitleContainer = styled.div`
+  margin-bottom: 10px;
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #012970;
+  }
+`;
 
 function PageTitle({ page }) {
   return (
-    <div className="pagetitle">
+    <PageTitleContainer className="pagetitle">
       <h1>{page}</h1>
       <nav>
         <ol className="breadcrumb">
@@ -15,8 +26,8 @@ function PageTitle({ page }) {
           <li className="breadcrumb-item active">{page}</li>
         </ol>
       </nav>
-    </div>
-  )
+    </PageTitleContainer>
+  );
 }
 
-export default PageTitle
+export default PageTitle;

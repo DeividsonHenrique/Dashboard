@@ -1,18 +1,18 @@
-import NavNotices from "../NavGeneral/NavNotices.jsx"
-import NavMessage from "../NavGeneral/NavMessage.jsx"
-import NavAvatar from "../NavGeneral/NavAvatar.jsx"
-import {NavContainer} from "./style.js"
+import NavNotices from "../NavGeneral/NavNotices.jsx";
+import NavMessage from "../NavGeneral/NavMessage.jsx";
+import NavAvatar from "../NavGeneral/NavAvatar.jsx";
+import { Ul } from "./style.js";
 
 function Nav() {
   return (
-    <NavContainer className="header-nav ms-auto">
-        <ul className="d-flex align-items-center">
-            <NavNotices />
-            <NavMessage />
-            <NavAvatar />
-        </ul>
-    </NavContainer>
-  )
+    <div className="header-nav ms-auto">
+      <Ul className="d-flex align-items-center">
+        <NavNotices />
+        <NavMessage />
+        <NavAvatar />
+      </Ul>
+    </div>
+  );
 }
 
-export default Nav
+export default Nav;

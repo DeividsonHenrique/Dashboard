@@ -1,16 +1,16 @@
 /* eslint-disable react/prop-types */
-
+import { PostNews } from "./style";
 
 function NewsPostItem({ item }) {
   return (
-    <div className="post-item clearfix">
+    <PostNews>
       <img src={item.img} alt={item.title} />
       <h4>
         <a href="#">{item.title}</a>
       </h4>
       <p>{item.subtitle}...</p>
-    </div>
-  )
+    </PostNews>
+  );
 }
 
-export default NewsPostItem
+export default NewsPostItem;

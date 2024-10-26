@@ -1,10 +1,11 @@
 import navList from "../../data/NavItem"
 import NavItem from "../NavGeneral/NavItem"
-
+import { SideBarAside, SideBarNav } from "./style"
+ 
 function SideBar() {
   return (
-    <aside id="sidebar" className="sidebar">
-      <ul className="sidebar-nav" id="sidebar-nav">
+    <SideBarAside id="sidebar" className="sidebar">
+      <SideBarNav className="sidebar-nav" id="sidebar-nav">
         <li className="nav-item">
           <a className="nav-link" href="/">
             <i className="bi bi-grid"></i>
@@ -166,8 +167,8 @@ function SideBar() {
           <NavItem key={nav._id} nav={nav} />
         ))}
 
-      </ul>
-    </aside>
+      </SideBarNav>
+    </SideBarAside>
   )
 }
 
