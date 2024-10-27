@@ -11,7 +11,7 @@ function News() {
   };
 
   const fetchData = async () => {
-    await fetch("./public/data/api/info.json") //http://localhost:3000/news
+    await fetch("./public/data/info.json") //http://localhost:3000/news
       .then((res) => res.json())
       .then((data) => {
         setNews(data.news);
