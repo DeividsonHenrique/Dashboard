@@ -12,7 +12,7 @@ function RecentActivity() {
   };
 
   const fetchData = async () => {
-    await fetch("./public/data/info.json") //http://localhost:3000/recentactiviy
+    await fetch("/data/info.json") //http://localhost:3000/recentactiviy
       .then((res) => res.json())
       .then((data) => {
         setItems(data.recentactiviy);

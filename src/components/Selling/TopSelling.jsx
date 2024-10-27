@@ -12,7 +12,7 @@ function TopSelling() {
   };
 
   const fetchData = async () => {
-    await fetch("./public/data/info.json") //http://localhost:3000/topselling
+    await fetch("/data/info.json") //http://localhost:3000/topselling
       .then((res) => res.json())
       .then((data) => {
         setItems(data.topselling);
