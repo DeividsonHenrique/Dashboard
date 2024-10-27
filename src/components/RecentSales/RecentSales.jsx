@@ -8,7 +8,7 @@ function RecentSales() {
   const [filter, setFilter] = useState("Today");
 
   const fetchData = async () => {
-    await fetch("./api/info.json") //http://localhost:3000/recentsales
+    await fetch("./public/data/api/info.json") //http://localhost:3000/recentsales
       .then((res) => res.json())
       .then((data) => {
         setItems(data.recentsales);
