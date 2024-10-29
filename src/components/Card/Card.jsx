@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react"
 import CardFilter from "./CardFilter"
+import { InfoCard, CardIcon } from "./style"
 
 
 
@@ -14,7 +15,7 @@ function Card({ card }) {
 
   return (
     <div className="col-xxl-4 col-md-6">
-      <div className="card info-card sales-card">
+      <InfoCard className="card info-card sales-card">
         <CardFilter filterChange={handleFilterChange} />
         <div className="card-body">
           <h5 className="card-title">
@@ -22,9 +23,9 @@ function Card({ card }) {
           </h5>
 
           <div className="d-flex align-items-center">
-            <div className="card-icon rounded-circle d-flex align-items-center justify-content-center">
+            <CardIcon className="card-icon rounded-circle d-flex align-items-center justify-content-center">
               <i className={card.icon}></i>
-            </div>
+            </CardIcon>
             <div className="ps-3">
               <h6>
                 {card.name === "Revenue" 
@@ -42,7 +43,7 @@ function Card({ card }) {
             </div>
           </div>
         </div>
-      </div>
+      </InfoCard>
     </div>
   )
 }

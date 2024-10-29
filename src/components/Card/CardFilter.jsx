@@ -1,38 +1,47 @@
 /* eslint-disable react/prop-types */
-
+import { Filter, Icon, DropHeader, DropItem } from "./style";
 
 function CardFilter({ filterChange }) {
   return (
-    <div className="filter">
-      <a href="#" className="icon" data-bs-toggle="dropdown">
+    <Filter className="filter">
+      <Icon href="#" className="icon" data-bs-toggle="dropdown">
         <i className="bi bi-three-dots"></i>
-      </a>
+      </Icon>
 
       <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-        <li className="dropdown-header text-start">
+        <DropHeader className="dropdown-header text-start">
           <h6>Filter</h6>
-        </li>
+        </DropHeader>
 
         <li>
-          <a className="dropdown-item" onClick={() => filterChange("Today")}>
+          <DropItem
+            className="dropdown-item"
+            onClick={() => filterChange("Today")}
+          >
             Today
-          </a>
+          </DropItem>
         </li>
 
         <li>
-          <a className="dropdown-item" onClick={() => filterChange("This Month")}>
+          <DropItem
+            className="dropdown-item"
+            onClick={() => filterChange("This Month")}
+          >
             This Month
-          </a>
+          </DropItem>
         </li>
 
         <li>
-          <a className="dropdown-item" onClick={() => filterChange("This Year")}>
+          <DropItem
+            className="dropdown-item"
+            onClick={() => filterChange("This Year")}
+          >
             This Year
-          </a>
+          </DropItem>
         </li>
       </ul>
-    </div>
-  )
+    </Filter>
+  );
 }
 
-export default CardFilter
+export default CardFilter;

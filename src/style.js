@@ -156,4 +156,15 @@ export const Bootstrap = createGlobalStyle`
     }
 }
 
+
+.dashboard .revenue-card .card-icon {
+  color: #2eca6a;
+  background: #e0f8e9;
+}
+
+.dashboard .customers-card .card-icon {
+  color: #ff771d;
+  background: #ffecdf;
+}
+
 `;
