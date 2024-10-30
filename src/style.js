@@ -166,5 +166,6 @@ export const Bootstrap = createGlobalStyle`
   color: #ff771d;
   background: #ffecdf;
 }
+  
 
 `;

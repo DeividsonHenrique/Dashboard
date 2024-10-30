@@ -11,7 +11,12 @@ export const NavProfile = styled.a`
   color: #012970;
 
   img {
-    max-height: 36px;
+    height: 36px;
+    width: 36px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
   }
 
   span {
@@ -127,5 +132,3 @@ export const Profile = styled.ul`
     line-height: 0;
   }
 `;
-
-
