@@ -1,15 +1,13 @@
-import Cards from "../Card/Cards"
-import Reports from "../Reports/Reports"
-import RecentSales from "../RecentSales/RecentSales"
-import TopSelling from "../Selling/TopSelling"
-import RecentActivity from "../Activity/RecentActivity"
-import BudgetReport from "../Budget/BudgetReport"
-import WebTraffic from "../Web/WebTraffic"
-import News from "../News/News"
+import Cards from "../Card/Cards";
+import Reports from "../Reports/Reports";
+import RecentSales from "../RecentSales/RecentSales";
+import TopSelling from "../Selling/TopSelling";
+import RecentActivity from "../Activity/RecentActivity";
+import BudgetReport from "../Budget/BudgetReport";
+import WebTraffic from "../Web/WebTraffic";
+import News from "../News/News";
 
 function Dashboard() {
-    
-
   return (
     <section className="dashboard">
       <h1>Dashboard</h1>
@@ -18,26 +16,26 @@ function Dashboard() {
           <div className="row">
             <Cards />
             <div className="col-12">
-                <Reports />
+              <Reports />
             </div>
             <div className="col-12">
-                <RecentSales />
+              <RecentSales />
             </div>
 
             <div className="col-12">
-                <TopSelling />
+              <TopSelling />
             </div>
           </div>
         </div>
         <div className="col-lg-4">
-            <RecentActivity />
-            <BudgetReport />
-            <WebTraffic />
-            <News />
+          <RecentActivity />
+          <BudgetReport />
+          <WebTraffic />
+          <News />
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Dashboard
+export default Dashboard;
